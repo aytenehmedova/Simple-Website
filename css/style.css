@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("/Image/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a{
+    color: white;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header start */
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+    
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight:700;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    
+}
+
+nav ul a:hover {
+    color: #0ba2c0;
+    
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .buttons{
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: 0.7s;
+}
+
+nav .menu .buttons:hover {
+    background-color: #0ba2c0;
+    color: white;
+
+}
+
+/* header end */
+
+/* Section start */
+.content{
+    color: white;
+    height: calc(100vh-100px);
+    padding-top: 150px;
+}
+
+.container h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.container p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.container .button{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.container .button a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 56px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    font-size: 18px;
+    transition: all .25s ease-in;
+}
+.container .button a:hover{
+    background-color: #0ba2c0;
+    color: white;
+
+}
+
+/* Section end */
+
+
+/* Responsive start */
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul{
+        column-gap: 20px;
+    }
+
+    .menu .button{
+        display: none;
+    }
+
+    .content{
+        padding-top: 50px;
+    }
+
+    .content h1{
+        font-size: 36px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .content .button{
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+    }
+
+    .content .button a{
+        padding: 14px;
+        width: 90%;
+    }
+}
+
+/* Responsive end */
